@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import Header from "./components/Header";
 import Gallery from "./components/Gallery";
 import ModalWindow from "./components/ModalWindow";
+import Footer from "./components/Footer";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -27,6 +28,7 @@ function App() {
       <Header searchValue={searchValue} setSearchValue={setSearchValue} />
       <Gallery searchValue={searchValue} setImageToShow={setImageToShow} />
       <ModalWindow data={imageToShow} setImageToShow={setImageToShow} />
+      <Footer />
     </div>
   );
 }
