@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { createGlobalStyle } from "styled-components";
+import Header from "./components/Header";
+import Gallery from "./components/Gallery";
+import ModalWindow from "./components/ModalWindow";
+
+const GlobalStyles = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    overflow-x: hidden;
+    font-family: "Mochiy Pop P One", sans-serif;
+  }
+`;
 
 function App() {
+  const [searchValue, setSearchValue] = useState("");
+  const [imageToShow, setImageToShow] = useState(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyles />
+      <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+      <Gallery searchValue={searchValue} setImageToShow={setImageToShow} />
+      <ModalWindow data={imageToShow} setImageToShow={setImageToShow} />
     </div>
   );
 }
