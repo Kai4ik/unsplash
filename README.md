@@ -6,16 +6,18 @@
 
 - Firebase Cloud Firestore is used to store and query data about photos (image url (from Firebase storage), photo label, name of the user who uploaded the photo)
 
+**Application is hosted on Vercel platform - https://unsplash-web-gallery.vercel.app/**
+
 ---
 
 ## Build with
 
-_React (entirely using React Hooks)
-_[styled-components](https://styled-components.com/docs)
-_[react-use](https://www.npmjs.com/package/react-use)
-_[Firebase Storage](https://firebase.google.com/products/storage)
-_[Firebase Realtime Database](https://firebase.google.com/products/firestore)
-_[Font Awesome Icons](https://fontawesome.com/)
+- React (entirely using React Hooks) 
+- [styled-components](https://styled-components.com/docs)
+- [react-use](https://www.npmjs.com/package/react-use)
+- [Firebase Storage](https://firebase.google.com/products/storage)
+- [Firebase Realtime Database](https://firebase.google.com/products/firestore)
+- [Font Awesome Icons](https://fontawesome.com/)
 
 ## Usage
 
@@ -36,6 +38,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.
 
----
-
-Visit website - https://shoppingifyapp.herokuapp.com/
+--- 
