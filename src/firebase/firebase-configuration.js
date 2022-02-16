@@ -8,13 +8,13 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAXtBJeeWnQsYBzVRHwo5QpX9_hbS_Mf4E",
-  authDomain: "unsplash-49832.firebaseapp.com",
-  projectId: "unsplash-49832",
-  storageBucket: "unsplash-49832.appspot.com",
-  messagingSenderId: "92210841140",
-  appId: "1:92210841140:web:5a9a3537471948d5df2c61",
-  measurementId: "G-FDXVTNKMDN",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
