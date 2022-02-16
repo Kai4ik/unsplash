@@ -60,6 +60,7 @@ const FormButtons = (props) => {
                 label: data.photoLabel,
                 createdAt: Timestamp.fromDate(new Date()),
               });
+              console.log(docRef);
               setShowForm(false);
               setData({ userName: "", photoLabel: "", file: null });
             } catch (e) {
